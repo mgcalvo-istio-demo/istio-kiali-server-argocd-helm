@@ -2,9 +2,9 @@ apiVersion: v2
 name: kiali-server
 description: A Helm chart for Kubernetes
 type: application
-version: 1.22.0
-appVersion: "1.22.0"
+version: 1.69.0
+appVersion: "1.69.0"
 dependencies:
   - name: kiali-server
-    version: 1.22.0
+    version: 1.69.0
     repository: "https://kiali.org/helm-charts"
