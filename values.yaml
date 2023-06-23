@@ -23,9 +23,7 @@ istio_namespace: "" # default is where Kiali is installed
 auth:
   openid: {}
   openshift: {}
-  strategy: "usernamepassword"
-  username: pepe
-  passphrase: pepe
+  strategy: ""
 
 deployment:
   # This only limits what Kiali will attempt to see, but Kiali Service Account has permissions to see everything.
@@ -84,6 +82,8 @@ external_services:
     enabled: true
   istio:
     root_namespace: ""
+  prometheus:
+    url: "http://prometheus-server.istio-system:80"
 
 identity: {}
   #cert_file:
